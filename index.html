@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1 class="title">Expense Tracker</h1>
+    <div class="balance-container">
+        <h3 class="balance">YOUR BALANCE</h3>
+        <p id="balance" class="balance-amount">₹0.00</p>
+    </div>
+    <div class="inc-exp-container">
+       <div class="money">
+       <h3>INCOME</h3>
+       <p id="money-plus" class="money-plus">₹0.00</p>
+       </div>
+        <div class="money">
+        <h3>EXPENSES</h3>
+        <p id="money-minus" class="money-minus">₹0.00</p>
+        </div>
+    </div>
+    <h3>History</h3>
+    <ul id="list" class="list">
+        <li class="plus"></li>
+        <li class="minus"></li>
+    </ul>
+    <h3>Add New Transaction</h3>
+    <form action="#" id="form">
+        <div class="form-control">
+            <label for="transaction">Transaction</label>
+            <input class="transaction-input" type="transaction" id="transaction" placeholder="Enter Transaction">
+        </div>
+        <div class="form-control">
+            <label for="amount">Amount (negative-expense, positive-income)</label>
+            <input class="amount-input" type="amount" id="amount" placeholder="Enter Amount">
+        </div>
+        <button class="btn-submit">Add Transaction</button>
+    </form>
+
+    
+
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
